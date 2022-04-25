@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">NETFLIX</h2>
+            <nav><!--menu de navegação-->
+                <a href="#">Início</a>
+                <a href="#">Filmes</a>
+                <a href="#">Séries</a>
+                <a href="#">Documentários</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+                <h3 class="titulo">HOUSE OF CARDS</h3>
+                <p class="descricao">Um político inescrupuloso não mede esforços para conquistar o poder nos EUA neste drama vencedor do Emmy e do Globo de Ouro.</p>
+            </div>
+            <div class="botoes"> <!--coloquei os botoes dentro de uma nova div para q eles assumam display:block, e ficar lado a lado e não embaixo pelo  flex-direction: column. Toda div vem por padrão block-->
+                <button role="button" class="botao"><!--propriedade role serve para dizer a qualquer equipamento q esteja renderizando esta página identifique q isso é um botão-->
+                    Assistir agora
+                </button>
+                <button role="button" class="botao">
+                    Mais informações
+                </button>
+            </div>
+        </div>
+    </main>
+
+
+</body>
+</html>

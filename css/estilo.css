@@ -1,0 +1,64 @@
+
+:root { /*Declarando variáveis para as cores principais da página*/
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--preta);/*chamando a variável criada no inicio, essa técnica serve bem para projetos que posteriormente poderão sofrer alterações e não precisará procurar no css todo fzer as alterações*/
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container {/*para o logo e o menu ficarem flutuando lado a lado iremos utilizar o display:flex*/
+    display: flex;
+    align-items: center; /*alinhar horizontalmente*/
+    justify-content: space-between; /*justificar os elementos horizontalmente*/
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #ccc;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/*FILME PRINCIPAL*/
+
+.filme-principal {
+    /*propriedade linear-gradient com dois rgbs iguais (preto) com transparencia 50% para criar uma leve camada escura por cima da imagem, destacar o texto em branco*/
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50) 100%), url(../img/capa-house.jpg);
+    
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;/*elementos em coluna no flex-box*/
+    justify-content: center;/*centralizados verticalmente*/
+    align-items: flex-start;/*alinhados a esquerda*/
+}
+
+.filme-principal .descricao {
+    margin-bottom: 40px;
+}
+
+.filme-principal .titulo {
+    font-size: 40px;
+}
