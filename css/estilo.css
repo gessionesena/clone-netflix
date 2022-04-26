@@ -57,8 +57,47 @@ header nav a:hover {
 
 .filme-principal .descricao {
     margin-bottom: 40px;
+    margin-top: 10px;
 }
 
 .filme-principal .titulo {
     font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin-top: 15%;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    font-size: 14px;
+    padding: 15px 30px;
+    margin-right: 15px;
+
+    cursor: pointer;
+    transition: 1s ease all;/*efeito ao passar mouse por cima do botão*/
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 5px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+.box-filmes {/*tamanho das imagens*/
+    height: 90%;
+    width: 90%;
+    display: block;
 }

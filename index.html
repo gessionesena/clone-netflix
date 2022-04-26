@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix Clone</title>
     <link rel="stylesheet" href="css/estilo.css">
+    
+    <!--RECOMENDA-SE COLOCAR OS scrips SÓ NO FINAL DA PÁGINA, PARA EVITAR ERROS NO CARREGAMENTO DA PÁGINA-->
+
+    
+
+    <!--owl css-->
+    <link rel="stylesheet" href="css/olw/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/olw/owl.theme.default.min.css">
+
 </head>
 <body>
     <header>
@@ -25,18 +34,64 @@
             <div class="container">
                 <h3 class="titulo">HOUSE OF CARDS</h3>
                 <p class="descricao">Um político inescrupuloso não mede esforços para conquistar o poder nos EUA neste drama vencedor do Emmy e do Globo de Ouro.</p>
-            </div>
-            <div class="botoes"> <!--coloquei os botoes dentro de uma nova div para q eles assumam display:block, e ficar lado a lado e não embaixo pelo  flex-direction: column. Toda div vem por padrão block-->
-                <button role="button" class="botao"><!--propriedade role serve para dizer a qualquer equipamento q esteja renderizando esta página identifique q isso é um botão-->
-                    Assistir agora
-                </button>
-                <button role="button" class="botao">
-                    Mais informações
-                </button>
+           
+                <div class="botoes"> <!--coloquei os botoes dentro de uma nova div para q eles assumam display:block, e ficar lado a lado e não embaixo pelo  flex-direction: column. Toda div vem por padrão block-->
+                    <button role="button" class="botao"><!--propriedade role serve para dizer a qualquer equipamento q esteja renderizando esta página identifique q isso é um botão-->
+                        <i class="fa-solid fa-play"></i>
+                        Assistir agora
+                    </button>
+                    <button role="button" class="botao">
+                        <!--para funcionar os icones da fontawesome, alem do script no head, a tag <i> copiada de cada ícone adicionado-->
+                        <i class="fa-solid fa-circle-info"></i>
+                        Mais informações
+                    </button>
+                </div>
             </div>
         </div>
     </main>
 
+    <div class="carrosel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filmes" src="img/mini1.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="img/mini2.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="img/mini3.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="img/mini4.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="img/mini5.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="img/mini6.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="img/mini7.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="img/mini8.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="img/mini9.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="img/mini10.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!--SCRIPT PARA USAR ICONES DO SITE fontawesome-->
+    <script src="https://kit.fontawesome.com/5cc224aad2.js" crossorigin="anonymous"></script>
+
+    <!--owl scripts-->
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
 
 </body>
 </html>
